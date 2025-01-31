@@ -1,11 +1,25 @@
-let imagem1 = document.querySelector('img#img-1')
-let imagem2 = document.querySelector('img#img-2')
-let imagem3 = document.querySelector('img#img-3')
-let imagem4 = document.querySelector('img#img-4')
-let todasImg = [imagem1 , imagem2 , imagem3 , imagem4];
-let sobreMim = document.querySelector('i#sobre-mim')
-let skills = document.querySelector('i#skills')
-let projects = document.querySelector('i#projects')
-let contact = document.querySelector('i#contato')
-let todosIcones = [sobreMim , skills , projects , contact];
+let paus = document.getElementById('carta-mim')
+let copas = document.getElementById('carta-de-habilidades')
+let espadas = document.getElementById('carta-de-projetos')
+let ouros = document.getElementById('carta-de-contato')
 
+
+function mostrarMim() {
+    paus.classList.remove('hidden')
+}
+function mostrarHabilidades() {
+    copas.classList.remove('hidden')
+}
+function mostrarProjetos() {
+    espadas.classList.remove('hidden')
+}
+function mostrarContato() {
+    ouros.classList.remove('hidden')
+}
+
+function removerCarta() {
+    paus.classList.add('hidden')
+    copas.classList.add('hidden')
+    espadas.classList.add('hidden')
+    ouros.classList.add('hidden')
+}

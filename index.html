@@ -8,11 +8,14 @@
     <script src="https://kit.fontawesome.com/f0fe080a33.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="images/tailwind-fav.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <style type="text/tailwindcss">
+        
         @theme {
           --font-poppins: "Poppins", serif;
         }
+        
     </style>
 
 </head>
@@ -20,34 +23,119 @@
 <body class="bg-[url(images/fundo-poker.jpg)] bg-no-repeat bg-cover h-screen flex flex-col items-center justify-center ">
 
 
-    <h1 class="font-poppins text-5xl relative top-[-90px] text-white max-md:text-2xl bg-red-500 p-4 rounded-md max-md:top-[-110px]">ESCOLHA SUA CARTA !</h1>
+    <h1 class="font-poppins text-5xl relative top-[-90px] text-white max-md:text-2xl bg-red-400 p-4 rounded-md max-md:top-[-110px] ">ESCOLHA SUA CARTA !</h1>
 
 
     <!--CONTATO-->
-    <i class="fa-solid fa-phone relative text-5xl bg-white p-[41.5px] rounded-full top-[160px] left-[393px] cursor-pointer text-emerald-600 z-1 max-lg:p-[32.5px] max-lg:text-4xl max-lg:left-[306.5px] max-lg:top-[116px] max-md:top-[260px] max-md:left-[103px]" id="contato"></i>
+    <i class="fa-solid fa-phone relative text-5xl bg-white p-[41.5px] rounded-full top-[160px] left-[393px] cursor-pointer text-emerald-600 z-1 max-lg:p-[32.5px] max-lg:text-4xl max-lg:left-[306.5px] max-lg:top-[116px] max-md:top-[260px] max-md:left-[103px]" id="contato" onclick="mostrarContato()"></i>
 
 
     <!--EU-->
-    <i class="fa-solid fa-user relative text-5xl bg-white py-[43.5px] rounded-full top-[25px] left-[-394.5px] cursor-pointer text-blue-600 z-1 px-[44px] max-lg:py-[34px] max-lg:px-[36px] max-lg:text-4xl max-lg:top-[16px] max-lg:left-[-308px] max-md:top-[-115px] max-md:left-[-102.5px]" id="sobre-mim"></i>
+    <i class="fa-solid fa-user relative text-5xl bg-white py-[43.5px] rounded-full top-[25px] left-[-394.5px] cursor-pointer text-blue-600 z-1 px-[44px] max-lg:py-[34px] max-lg:px-[36px] max-lg:text-4xl max-lg:top-[16px] max-lg:left-[-308px] max-md:top-[-115px] max-md:left-[-102.5px]" id="sobre-mim" onclick="mostrarMim()"></i>
     
 
     <!--HABILIDADES-->
-    <i class="fa-solid fa-bolt relative text-5xl bg-white py-[42.5px] rounded-[50%] top-[-107px] left-[-131.6px] cursor-pointer px-[44.4px] text-yellow-500 z-1 max-lg:text-4xl max-lg:px-[36px] max-lg:top-[-88px] max-lg:left-[-103px] max-lg:py-[34.5px] max-md:top-[-217.5px] max-md:left-[102.5px]" id="skills"></i>
+    <i class="fa-solid fa-bolt relative text-5xl bg-white py-[42.5px] rounded-[50%] top-[-107px] left-[-131.6px] cursor-pointer px-[44.4px] text-yellow-500 z-1 max-lg:text-4xl max-lg:px-[36px] max-lg:top-[-88px] max-lg:left-[-103px] max-lg:py-[34.5px] max-md:top-[-217.5px] max-md:left-[102.5px]" id="skills" onclick="mostrarHabilidades()"></i>
 
 
     <!--PROJETOS-->
-    <i class="fa-solid fa-code relative text-5xl bg-white py-[43.5px] rounded-[50%] top-[-240px] left-[130px] px-[36px] text-rose-600 z-1 max-lg:text-4xl max-lg:px-[30px] max-lg:py-[34px] max-lg:top-[-194px] max-lg:left-[100px] max-md:top-[-53px] max-md:left-[-102.5px] cursor-pointer" id="projects"></i>
+    <i class="fa-solid fa-code relative text-5xl bg-white py-[43.5px] rounded-[50%] top-[-240px] left-[130px] px-[36px] text-rose-600 z-1 max-lg:text-4xl max-lg:px-[30px] max-lg:py-[34px] max-lg:top-[-194px] max-lg:left-[100px] max-md:top-[-53px] max-md:left-[-102.5px] cursor-pointer" id="projects" onclick="mostrarProjetos()"></i>
 
 
     <div class="grid grid-cols-4 gap-8 max-md:grid-cols-2 absolute">
-        <img src="https://th.bing.com/th/id/OIP.0UznWuCjInq1S6ksRndNCgHaKV?pid=ImgDet&w=206&h=286&c=7" alt="" class="overflow-hidden rounded-xl cursor-pointer h-[320px]  max-lg:h-[240px]" id="img-1">
+        <img src="https://th.bing.com/th/id/OIP.0UznWuCjInq1S6ksRndNCgHaKV?pid=ImgDet&w=206&h=286&c=7" alt="" class="overflow-hidden rounded-xl cursor-pointer h-[320px]  max-lg:h-[240px]" id="img-1" onclick="mostrarMim()">
 
-        <img src="https://th.bing.com/th/id/OIP.0UznWuCjInq1S6ksRndNCgHaKV?pid=ImgDet&w=206&h=286&c=7" alt="" class="overflow-hidden rounded-xl cursor-pointer h-[320px]  max-lg:h-[240px]" id="img-2">
+        <img src="https://th.bing.com/th/id/OIP.0UznWuCjInq1S6ksRndNCgHaKV?pid=ImgDet&w=206&h=286&c=7" alt="" class="overflow-hidden rounded-xl cursor-pointer h-[320px]  max-lg:h-[240px]" id="img-2" onclick="mostrarHabilidades()">
 
-        <img src="https://th.bing.com/th/id/OIP.0UznWuCjInq1S6ksRndNCgHaKV?pid=ImgDet&w=206&h=286&c=7" alt="" class="overflow-hidden rounded-xl cursor-pointer h-[320px]  max-lg:h-[240px]" id="img-3">
+        <img src="https://th.bing.com/th/id/OIP.0UznWuCjInq1S6ksRndNCgHaKV?pid=ImgDet&w=206&h=286&c=7" alt="" class="overflow-hidden rounded-xl cursor-pointer h-[320px]  max-lg:h-[240px]" id="img-3" onclick="mostrarProjetos()">
 
-        <img src="https://th.bing.com/th/id/OIP.0UznWuCjInq1S6ksRndNCgHaKV?pid=ImgDet&w=206&h=286&c=7" alt="" class="overflow-hidden rounded-xl cursor-pointer h-[320px]  max-lg:h-[240px]" id="img-4">
+        <img src="https://th.bing.com/th/id/OIP.0UznWuCjInq1S6ksRndNCgHaKV?pid=ImgDet&w=206&h=286&c=7" alt="" class="overflow-hidden rounded-xl cursor-pointer h-[320px]  max-lg:h-[240px]" id="img-4" onclick="mostrarContato()">
     </div>
+
+
+
+            <!--SOBRE MIMM-->
+        <div class="h-[95vh] w-[600px] bg-white absolute px-8 z-1 rounded-4xl flex flex-col justify-between hidden teste max-lg:h-[86vh] max-lg:w-[500px]" id="carta-mim">
+            <div class="flex flex-col ">
+                <span class="text-[120px] max-lg:text-[100px]">A</span>
+                <i class="bi bi-suit-club-fill text-7xl max-lg:text-6xl"></i>
+            </div>
+            <!--ROTATE-->
+            <div class="flex flex-col rotate-180">
+                <span class="text-[120px] max-lg:text-[100px]">A</span>
+                <i class="bi bi-suit-club-fill text-7xl max-lg:text-6xl"></i>
+            </div>
+            <div class="flex justify-end absolute top-[0px] left-[0px]">
+                <i class="bi bi-x-circle text-5xl absolute top-[20px] opacity-50 left-[524px] cursor-pointer hover:text-rose-600 duration-300 ease-out max-lg:left-[424px]" onclick="removerCarta()"></i>
+            </div>
+            
+            
+        </div>
+
+ 
+        <!--HABILIDADES-->
+
+        <div class="h-[95vh] w-[600px] bg-white absolute px-8 z-1 rounded-4xl flex flex-col justify-between hidden teste max-lg:h-[86vh] max-lg:w-[500px]" id="carta-de-habilidades">
+            <div class="flex flex-col ">
+                <span class="text-[120px] text-rose-500 max-lg:text-[100px]">A</span>
+                <i class="bi bi-suit-heart-fill text-7xl text-rose-500 max-lg:text-6xl"></i>
+            </div>
+            <!--ROTATE-->
+            <div class="flex flex-col rotate-180">
+                <span class="text-[120px] text-rose-500 max-lg:text-[100px]">A</span>
+                <i class="bi bi-suit-heart-fill text-7xl text-rose-500 max-lg:text-6xl"></i>
+            </div>
+            <div class="flex justify-end absolute top-[0px] left-[0px]">
+                <i class="bi bi-x-circle text-5xl absolute top-[20px] opacity-50 left-[524px] cursor-pointer hover:text-rose-600 duration-300 ease-out max-lg:left-[424px]" onclick="removerCarta()"></i>
+            </div>
+            
+            
+        </div>
+
+
+
+    <!--PROJETOS-->
+
+    <div class="h-[95vh] w-[600px] bg-white absolute px-8 z-1 rounded-4xl flex flex-col justify-between hidden teste max-lg:h-[86vh] max-lg:w-[500px]" id="carta-de-projetos">
+        <div class="flex flex-col ">
+            <span class="text-[120px] max-lg:text-[100px]">A</span>
+            <i class="bi bi-suit-spade-fill text-7xl max-lg:text-6xl"></i>
+        </div>
+        <!--ROTATE-->
+        <div class="flex flex-col rotate-180">
+            <span class="text-[120px] max-lg:text-[100px]">A</span>
+            <i class="bi bi-suit-spade-fill text-7xl max-lg:text-6xl"></i>
+        </div>
+        <div class="flex justify-end absolute top-[0px] left-[0px]">
+            <i class="bi bi-x-circle text-5xl absolute top-[20px] opacity-50 left-[524px] cursor-pointer hover:text-rose-600 duration-300 ease-out max-lg:left-[424px]" onclick="removerCarta()"></i>
+        </div>
+        
+        
+    </div>
+
+
+    <!--CONTATO-->
+
+    <div class="h-[95vh] w-[600px] bg-white absolute px-8 z-1 rounded-4xl flex flex-col justify-between hidden teste max-lg:h-[86vh] max-lg:w-[500px]" id="carta-de-contato">
+        <div class="flex flex-col ">
+            <span class="text-[120px] text-rose-500 max-lg:text-[100px]">A</span>
+            <i class="bi bi-suit-diamond-fill text-7xl text-rose-500 max-lg:text-6xl"></i>
+        </div>
+        <!--ROTATE-->
+        <div class="flex flex-col rotate-180">
+            <span class="text-[120px] text-rose-500 max-lg:text-[100px]">A</span>
+            <i class="bi bi-suit-diamond-fill text-7xl text-rose-500 max-lg:text-6xl"></i>
+        </div>
+        <div class="flex justify-end absolute top-[0px] left-[0px] ">
+            <i class="bi bi-x-circle text-5xl absolute top-[20px] opacity-50 left-[524px] cursor-pointer hover:text-rose-600 duration-300 ease-out max-lg:left-[424px]" onclick="removerCarta()"></i>
+        </div>
+        
+        
+    </div>
+
+
+
+
 
     <script src="script.js"></script>
     
